@@ -1,3 +1,4 @@
+"""Demo script that simulates checkouts in the library system."""
 from custom_classes import MediaItem, Book, DVD, LibraryCollection
 
 book = MediaItem("Clean Code", "Robert C. Martin")
@@ -35,6 +36,7 @@ print(dvd.checkout())
 
 print("\n=== Part 4: Library collection ===")
 
+# Use new objects so the checkouts above do not affect this listing.
 library = LibraryCollection()
 
 pragmatic = Book("The Pragmatic Programmer", "Andrew Hunt", 352)
